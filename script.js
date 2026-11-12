@@ -4,7 +4,25 @@ const books = [
   { title: "Frankenstein", genre: "gothic", rating: 5, dnf: true },
   { title: "The Turn of the Screw", genre: "gothic", rating: 3.75, dnf: false },
   { title: "The Hunger Games", genre: "young adult", rating: 5, dnf: false },
-  { title: "The Giver", genre: "young adult", rating: 2, dnf: false }
+  { title: "The Giver", genre: "young adult", rating: 2, dnf: false },
+  { title: "Pride and Prejudice", genre: "romance", rating: 5, dnf: false },
+  { title: "Jane Eyre", genre: "gothic", rating: 4.5, dnf: false },
+  { title: "Dracula", genre: "gothic", rating: 4, dnf: false },
+  { title: "Little Women", genre: "literary", rating: 4.5, dnf: false },
+  { title: "To Kill a Mockingbird", genre: "literary", rating: 5, dnf: false },
+  { title: "The Picture of Dorian Gray", genre: "gothic", rating: 4.5, dnf: false },
+  { title: "The Fault in Our Stars", genre: "young adult", rating: 4, dnf: false },
+  { title: "The Hobbit", genre: "fantasy", rating: 5, dnf: false },
+  { title: "The Fellowship of the Ring", genre: "fantasy", rating: 4, dnf: true },
+  { title: "The Book Thief", genre: "young adult", rating: 4, dnf: false },
+  { title: "The Perks of Being a Wallflower", genre: "young adult", rating: 4.5, dnf: false },
+  { title: "The Shining", genre: "horror", rating: 2, dnf: true },
+  { title: "The Bell Jar", genre: "literary", rating: 4, dnf: false },
+  { title: "The Odyssey", genre: "epic", rating: 3, dnf: false },
+  { title: "A Wrinkle in Time", genre: "scifi", rating: 3.5, dnf: false },
+  { title: "The Silent Patient", genre: "thriller", rating: 4, dnf: false },
+  { title: "The Housemaid", genre: "thriller", rating: 2, dnf: true },
+  { title: "The Ballad of Songbirds and Snakes", genre: "young adult", rating: 5, dnf: false }
 ];
 
 const keptBooks = [];
