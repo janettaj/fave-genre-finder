@@ -78,6 +78,6 @@ console.log(topGenre, topGenreCount);
 console.log(secondGenre, secondGenreCount);
 
 document.getElementById("topGenre").textContent = topGenre;
-document.getElementById("topGenreCount").textContent = topGenreCount;
+document.getElementById("topGenreCount").textContent = `${topGenreCount} books`;
 document.getElementById("secondGenre").textContent = secondGenre;
-document.getElementById("secondGenreCount").textContent = secondGenreCount;
+document.getElementById("secondGenreCount").textContent = `${secondGenreCount} books`;
