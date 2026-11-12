@@ -58,3 +58,5 @@ console.log(genreCounts);
 
 console.log(topGenre, topGenreCount);
 console.log(secondGenre, secondGenreCount);
+
+console.log(`Your favorite genre during this period was ${topGenre}, with ${topGenreCount} books rated 4+ stars. Your second favorite genre was ${secondGenre}, with ${secondGenreCount} books rated 4+ stars.`);
