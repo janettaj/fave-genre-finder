@@ -10,3 +10,12 @@ h1, span {
 p {
   font-size: 18px;
 }
+
+#topGenre, #secondGenre, #topGenreCount, #secondGenreCount {
+  transition: ease 0.4s;
+}
+
+#topGenre:hover, #secondGenre:hover, #topGenreCount:hover, #secondGenreCount:hover {
+  background: #701705;
+  color: #F2F2F2;
+}
