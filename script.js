@@ -14,3 +14,22 @@ for (const book of books) {
 }
 
 console.log(keptBooks);
+
+const genreCounts = [];
+
+for (const keptBook of keptBooks) {
+  let foundGenre = false;
+
+  for (const genre of genreCounts) {
+    if (genre.genre === keptBook.genre) {
+      foundGenre = true;
+      genre.count = genre.count + 1;
+    }
+  }
+  
+    if (foundGenre === false) {
+      genreCounts.push({ genre: keptBook.genre, count: 1 });
+    }
+}
+
+console.log(genreCounts);
