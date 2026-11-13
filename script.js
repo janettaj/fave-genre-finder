@@ -93,6 +93,10 @@ for (const book of keptBooks) {
   }
 }
 
+if (topFiveStarCount === 0) {
+    topReport.textContent = `No 5 star reads to display.`;
+}
+
 let secondFiveStarCount = 0;
 
 for (const book of keptBooks) {
@@ -102,8 +106,8 @@ for (const book of keptBooks) {
     secondReport.append(item);
     secondFiveStarCount = secondFiveStarCount + 1;
   }
-  
-  if (secondFiveStarCount === 0) {
+}
+
+if (secondFiveStarCount === 0) {
     secondReport.textContent = `No 5 star reads to display.`;
-  }
 }
