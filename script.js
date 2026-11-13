@@ -82,11 +82,14 @@ document.getElementById("topGenreCount").textContent = `${topGenreCount} books`;
 document.getElementById("secondGenre").textContent = secondGenre;
 document.getElementById("secondGenreCount").textContent = `${secondGenreCount} books`;
 
+let topFiveStarCount = 0;
+
 for (const book of keptBooks) {
   if (book.genre === topGenre && book.rating === 5) {
     const item = document.createElement("li");
     item.textContent = `${book.title}`;
     topReport.append(item);
+    topFiveStarCount = topFiveStarCount + 1;
   }
 }
 
