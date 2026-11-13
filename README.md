@@ -6,9 +6,11 @@ I read a lot of books, but I don’t know what genres I like the best when I’m
 
 ## How to Run It
 You need nothing installed.
+
 1. Open the [live page](https://janettaj.github.io/fave-genre-finder/).
 2. The report is automatically generated from a premade array of books. There is nothing for you to do or click.
-Or click "Code", then "Download ZIP", unzip the folder, and open `index.html` in your browser.
+
+Or click "Code", then "Download ZIP", unzip the folder, and open `index.html` in your browser. If not unzipped, the file will not load properly.
 
 ## What It Looks Like When It Works
 If there were 5 star reads for a given genre, the page displays:
