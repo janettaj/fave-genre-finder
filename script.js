@@ -89,3 +89,18 @@ for (const book of keptBooks) {
     topReport.append(item);
   }
 }
+
+let secondFiveStarCount = 0;
+
+for (const book of keptBooks) {
+  if (book.genre === secondGenre && book.rating === 5) {
+    const item = document.createElement("li");
+    item.textContent = `${book.title}`;
+    secondReport.append(item);
+    secondFiveStarCount = secondFiveStarCount + 1;
+  }
+  
+  if (secondFiveStarCount === 0) {
+    secondReport.textContent = `No 5 star reads to display.`;
+  }
+}
