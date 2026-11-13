@@ -41,7 +41,7 @@ If I had more time to work on it, I would implement a submission form that would
 
 ## Files
 
-`index.html`: The web page, which loads `style.css` and `script.js`
-`style.css`: Styles the page with a background color, font, text color, and hover effects.
-`script.js`: Holds the books array and the logic for deducing the top genres, as well as displaying the text in parentheses under "What It Looks Like When It Works" so that the text can be dynamic.
-`plan.md`: My Capstone Plan from the course.
+- `index.html`: The web page, which loads `style.css` and `script.js`
+- `style.css`: Styles the page with a background color, font, text color, and hover effects.
+- `script.js`: Holds the books array and the logic for deducing the top genres, as well as displaying the text in parentheses under "What It Looks Like When It Works" so that the text can be dynamic.
+- `plan.md`: My Capstone Plan from the course.
