@@ -2,7 +2,7 @@
 Shows me a report of my top 2 genres based on 4-5 star ratings from an array, and a list of all 5 star reads for both genres.
 
 ## The Problem
-I read a lot of books, but I don’t know what genres I like the best when I’m asked. I need a reading log that can tell me what books I highly rate the most often.
+I read a lot of books, but I don’t know what genres I like the best when I’m asked. I needed a reading log that can tell me what books I highly rate the most often.
 
 ## How to Run It
 You need nothing installed.
