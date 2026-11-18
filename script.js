@@ -83,15 +83,15 @@ function topTwoBooks (keptBooks) {
 
 const results = topTwoBooks(keptBooks);
 
-document.getElementById("topGenre").textContent = topGenre;
-document.getElementById("topGenreCount").textContent = `${topGenreCount} books`;
-document.getElementById("secondGenre").textContent = secondGenre;
-document.getElementById("secondGenreCount").textContent = `${secondGenreCount} books`;
+document.getElementById("topGenre").textContent = results.topGenre;
+document.getElementById("topGenreCount").textContent = `${results.topGenreCount} books`;
+document.getElementById("secondGenre").textContent = results.secondGenre;
+document.getElementById("secondGenreCount").textContent = `${results.secondGenreCount} books`;
 
 let topFiveStarCount = 0;
 
 for (const book of keptBooks) {
-  if (book.genre === topGenre && book.rating === 5) {
+  if (book.genre === results.topGenre && book.rating === 5) {
     const item = document.createElement("li");
     item.textContent = `${book.title}`;
     topReport.append(item);
@@ -106,7 +106,7 @@ if (topFiveStarCount === 0) {
 let secondFiveStarCount = 0;
 
 for (const book of keptBooks) {
-  if (book.genre === secondGenre && book.rating === 5) {
+  if (book.genre === results.secondGenre && book.rating === 5) {
     const item = document.createElement("li");
     item.textContent = `${book.title}`;
     secondReport.append(item);
@@ -115,5 +115,7 @@ for (const book of keptBooks) {
 }
 
 if (secondFiveStarCount === 0) {
+    secondReport.textContent = `No 5 star reads to display.`;
+}
     secondReport.textContent = `No 5 star reads to display.`;
 }
