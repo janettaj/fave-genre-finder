@@ -35,7 +35,7 @@ for (const book of books) {
 
 console.log(keptBooks);
 
-function topTwoBooks (keptBooks) {
+function findTopTwoBooks (keptBooks) {
   const genreCounts = [];
   
   let topGenre = "";
@@ -81,7 +81,7 @@ function topTwoBooks (keptBooks) {
   };
 }
 
-const results = topTwoBooks(keptBooks);
+const results = findTopTwoBooks(keptBooks);
 
 document.getElementById("topGenre").textContent = results.topGenre;
 document.getElementById("topGenreCount").textContent = `${results.topGenreCount} books`;
