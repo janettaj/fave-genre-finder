@@ -35,47 +35,53 @@ for (const book of books) {
 
 console.log(keptBooks);
 
-const genreCounts = [];
-
-let topGenre = "";
-let topGenreCount = 0;
-let secondGenre = "";
-let secondGenreCount = 0;
-
-for (const keptBook of keptBooks) {
-  let foundGenre = false;
-  let currentGenre;
-
-  for (const genre of genreCounts) {
-    if (genre.genre === keptBook.genre) {
-      foundGenre = true;
-      genre.count = genre.count + 1;
-      currentGenre = genre;
+function topTwoBooks (keptBooks) {
+  const genreCounts = [];
+  
+  let topGenre = "";
+  let topGenreCount = 0;
+  let secondGenre = "";
+  let secondGenreCount = 0;
+  
+  for (const keptBook of keptBooks) {
+    let foundGenre = false;
+    let currentGenre;
+  
+    for (const genre of genreCounts) {
+      if (genre.genre === keptBook.genre) {
+        foundGenre = true;
+        genre.count = genre.count + 1;
+        currentGenre = genre;
+      }
+    }
+  
+    if (foundGenre === false) {
+      currentGenre = { genre: keptBook.genre, count: 1 };
+      genreCounts.push(currentGenre);
+    }
+  
+    if (currentGenre.count > topGenreCount) {
+      secondGenreCount = topGenreCount;
+      secondGenre = topGenre;
+  
+      topGenreCount = currentGenre.count;
+      topGenre = currentGenre.genre;
+  
+    } else if (currentGenre.count > secondGenreCount) {
+      secondGenreCount = currentGenre.count;
+      secondGenre = currentGenre.genre;
     }
   }
-
-  if (foundGenre === false) {
-    currentGenre = { genre: keptBook.genre, count: 1 };
-    genreCounts.push(currentGenre);
-  }
-
-  if (currentGenre.count > topGenreCount) {
-    secondGenreCount = topGenreCount;
-    secondGenre = topGenre;
-
-    topGenreCount = currentGenre.count;
-    topGenre = currentGenre.genre;
-
-  } else if (currentGenre.count > secondGenreCount) {
-    secondGenreCount = currentGenre.count;
-    secondGenre = currentGenre.genre;
-  }
+  
+  return {
+    topGenre,
+    topGenreCount,
+    secondGenre,
+    secondGenreCount
+  };
 }
 
-console.log(genreCounts);
-
-console.log(topGenre, topGenreCount);
-console.log(secondGenre, secondGenreCount);
+const results = topTwoBooks(keptBooks);
 
 document.getElementById("topGenre").textContent = topGenre;
 document.getElementById("topGenreCount").textContent = `${topGenreCount} books`;
