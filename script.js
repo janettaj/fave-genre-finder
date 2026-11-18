@@ -117,5 +117,3 @@ for (const book of keptBooks) {
 if (secondFiveStarCount === 0) {
     secondReport.textContent = `No 5 star reads to display.`;
 }
-    secondReport.textContent = `No 5 star reads to display.`;
-}
